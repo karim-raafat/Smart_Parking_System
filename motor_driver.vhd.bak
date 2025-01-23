@@ -1,0 +1,39 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+
+ENTITY motor_driver IS
+    PORT (
+        motorctrl : IN STD_LOGIC; -- Control signal
+        clk : IN STD_LOGIC; -- Clock input
+        pwm : OUT STD_LOGIC -- PWM output for the servo motor
+    );
+END ENTITY;
+
+ARCHITECTURE motor_driver_arch OF motor_driver IS
+    SIGNAL cnt : INTEGER := 0; -- Counter for PWM timing
+    SIGNAL speedCtrl : INTEGER := 100000; -- Adjust for servo speed
+    SIGNAL angleCtrl : INTEGER := 50000; -- Adjust for 90-degree servo position
+
+BEGIN
+    PROCESS (clk)
+    BEGIN
+        IF RISING_EDGE(clk) THEN
+            IF cnt < speedCtrl THEN
+                cnt <= cnt + 1;
+            ELSE
+                cnt <= 0;
+            END IF;
+        END IF;
+    END PROCESS;
+
+    PROCESS (motorctrl)
+    BEGIN
+        IF motorctrl = '1' THEN
+            angleCtrl <= 50000; -- Adjust for 90-degree open position
+        ELSE
+            angleCtrl <= 100000; -- Adjust for closed position
+        END IF;
+    END PROCESS;
+
+    pwm <= '1' WHEN cnt < angleCtrl ELSE '0';
+END ARCHITECTURE;

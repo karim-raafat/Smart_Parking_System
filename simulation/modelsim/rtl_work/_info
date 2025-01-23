@@ -1,0 +1,206 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/KR/GUC/Semester 5/DSD/Team39_Batch1/project/simulation/modelsim
+Emotor_driver
+Z1 w1732539465
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 1
+R0
+Z5 8C:/KR/GUC/Semester 5/DSD/Team39_Batch1/project/motor_driver.vhd
+Z6 FC:/KR/GUC/Semester 5/DSD/Team39_Batch1/project/motor_driver.vhd
+l0
+L5 1
+VAAG=NC^JPX@TBSLH5UN;73
+!s100 LVo7`A]X89QBAgOAcC9[S0
+Z7 OV;C;2020.1;71
+31
+Z8 !s110 1732570811
+!i10b 1
+Z9 !s108 1732570811.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/KR/GUC/Semester 5/DSD/Team39_Batch1/project/motor_driver.vhd|
+Z11 !s107 C:/KR/GUC/Semester 5/DSD/Team39_Batch1/project/motor_driver.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Amotor_driver_arch
+R2
+R3
+R4
+DEx4 work 12 motor_driver 0 22 AAG=NC^JPX@TBSLH5UN;73
+!i122 1
+l28
+L13 61
+VgP@KVK326IM3Tj17hbN^92
+!s100 mEjXkY`FA?^W?<W61N`SO2
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Pmotor_driver_pkg
+R3
+R4
+!i122 2
+w1732538868
+R0
+8C:/KR/GUC/Semester 5/DSD/Team39_Batch1/project/motor_driver_pkg.vhd
+FC:/KR/GUC/Semester 5/DSD/Team39_Batch1/project/motor_driver_pkg.vhd
+l0
+L4 1
+Vd[6NWFVCoYW8Ho`0X7AE10
+!s100 S6b`G1[TKC:abQ=52IEed0
+R7
+31
+R8
+!i10b 1
+R9
+!s90 -reportprogress|300|-93|-work|work|C:/KR/GUC/Semester 5/DSD/Team39_Batch1/project/motor_driver_pkg.vhd|
+!s107 C:/KR/GUC/Semester 5/DSD/Team39_Batch1/project/motor_driver_pkg.vhd|
+!i113 1
+R12
+R13
+Eseven_segment
+Z14 w1732538838
+R3
+R4
+!i122 0
+R0
+Z15 8C:/KR/GUC/Semester 5/DSD/Team39_Batch1/project/seven_segment.vhd
+Z16 FC:/KR/GUC/Semester 5/DSD/Team39_Batch1/project/seven_segment.vhd
+l0
+L4 1
+VPMleY?nPAcfBFg@F`QVJm1
+!s100 TDCA;Oi=8kMB;oMleFcjL3
+R7
+31
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/KR/GUC/Semester 5/DSD/Team39_Batch1/project/seven_segment.vhd|
+Z18 !s107 C:/KR/GUC/Semester 5/DSD/Team39_Batch1/project/seven_segment.vhd|
+!i113 1
+R12
+R13
+Aarch_seven_segment
+R3
+R4
+Z19 DEx4 work 13 seven_segment 0 22 PMleY?nPAcfBFg@F`QVJm1
+!i122 0
+l12
+L11 16
+VC:b]d<WoO^DEH?8XO`bF40
+!s100 [m>bAz]CVL46_n;VWkKX72
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Esmart_parking
+Z20 w1732539466
+Z21 DPx4 work 16 motor_driver_pkg 0 22 d[6NWFVCoYW8Ho`0X7AE10
+R2
+R3
+R4
+!i122 3
+R0
+Z22 8C:/KR/GUC/Semester 5/DSD/Team39_Batch1/project/Smart_Parking.vhd
+Z23 FC:/KR/GUC/Semester 5/DSD/Team39_Batch1/project/Smart_Parking.vhd
+l0
+L6 1
+VlRIg=KMj4NNG;4`n`:]C23
+!s100 8hDkG[IEMF3VKjKn[zlmd0
+R7
+31
+R8
+!i10b 1
+R9
+Z24 !s90 -reportprogress|300|-93|-work|work|C:/KR/GUC/Semester 5/DSD/Team39_Batch1/project/Smart_Parking.vhd|
+Z25 !s107 C:/KR/GUC/Semester 5/DSD/Team39_Batch1/project/Smart_Parking.vhd|
+!i113 1
+R12
+R13
+Amyarchitecture
+R19
+R21
+R2
+R3
+R4
+DEx4 work 13 smart_parking 0 22 lRIg=KMj4NNG;4`n`:]C23
+!i122 3
+l21
+L15 58
+Vg1LXDG8G9PInSezN@H=<Y3
+!s100 8R^OE<VoR=:3FZEaUF6mJ3
+R7
+31
+R8
+!i10b 1
+R9
+R24
+R25
+!i113 1
+R12
+R13
+Esmart_parking_tb
+Z26 w1732570650
+R2
+R3
+R4
+!i122 4
+R0
+Z27 8C:/KR/GUC/Semester 5/DSD/Team39_Batch1/project/simulation/modelsim/Smart_Parking.vht
+Z28 FC:/KR/GUC/Semester 5/DSD/Team39_Batch1/project/simulation/modelsim/Smart_Parking.vht
+l0
+L5 1
+V>1NGgdJeFkObgH?b:M2VB0
+!s100 zmn59``>I?fQbKN0BNeFI0
+R7
+31
+R8
+!i10b 1
+R9
+Z29 !s90 -reportprogress|300|-93|-work|work|C:/KR/GUC/Semester 5/DSD/Team39_Batch1/project/simulation/modelsim/Smart_Parking.vht|
+!s107 C:/KR/GUC/Semester 5/DSD/Team39_Batch1/project/simulation/modelsim/Smart_Parking.vht|
+!i113 1
+R12
+R13
+Abehavior
+R2
+R3
+R4
+DEx4 work 16 smart_parking_tb 0 22 >1NGgdJeFkObgH?b:M2VB0
+!i122 4
+l28
+L8 67
+Vc1=1JMZN6N9GzJC3jV_8g3
+!s100 @SK`I<2oZQTYg?5o2jmPP1
+R7
+31
+R8
+!i10b 1
+R9
+R29
+Z30 !s107 C:/KR/GUC/Semester 5/DSD/Team39_Batch1/project/simulation/modelsim/Smart_Parking.vht|
+!i113 1
+R12
+R13

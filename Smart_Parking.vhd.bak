@@ -1,0 +1,50 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.STD_LOGIC_ARITH.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+USE WORK.seven_segment_pkg.ALL;
+USE WORK.motor_driver_pkg.ALL;
+
+ENTITY Smart_Parking IS
+    PORT (
+        clk : IN STD_LOGIC; -- Clock signal
+        a : IN STD_LOGIC; -- Signal from Arduino
+        digitOut : OUT STD_LOGIC_VECTOR(6 DOWNTO 0); -- Seven-segment output
+        pwm : OUT STD_LOGIC -- Servo motor PWM output
+    );
+END ENTITY;
+
+ARCHITECTURE MyArchitecture OF Smart_Parking_Project IS
+    SIGNAL carCountSignal : INTEGER := 0; -- Counter for cars
+    SIGNAL digitBin : STD_LOGIC_VECTOR(3 DOWNTO 0) := "0000"; -- 4-bit binary for 7-segment display
+
+BEGIN
+
+    -- Seven-segment instantiation
+    digit0: seven_segment PORT MAP (
+        a => digitBin,
+        f => digitOut
+    );
+
+    -- Servo motor driver instantiation
+    motorStage: motor_driver PORT MAP (
+        motorctrl => a,
+        clk => clk,
+        pwm => pwm
+    );
+
+    -- Process to count cars and update the 7-segment display
+    PROCESS (a)
+    BEGIN
+        IF a = '1' THEN
+            IF carCountSignal < 9 THEN
+                carCountSignal <= carCountSignal + 1;
+            ELSE
+                carCountSignal <= 0; -- Reset to 0 after 9
+            END IF;
+            digitBin <= STD_LOGIC_VECTOR(TO_UNSIGNED(carCountSignal, digitBin'LENGTH));
+        END IF;
+    END PROCESS;
+
+END ARCHITECTURE;
