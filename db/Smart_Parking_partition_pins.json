@@ -1,0 +1,49 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "digitOut[0]",
+					"strict" : false
+				},
+				{
+					"name" : "digitOut[1]",
+					"strict" : false
+				},
+				{
+					"name" : "digitOut[2]",
+					"strict" : false
+				},
+				{
+					"name" : "digitOut[3]",
+					"strict" : false
+				},
+				{
+					"name" : "digitOut[4]",
+					"strict" : false
+				},
+				{
+					"name" : "digitOut[5]",
+					"strict" : false
+				},
+				{
+					"name" : "digitOut[6]",
+					"strict" : false
+				},
+				{
+					"name" : "pwm",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "a",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
